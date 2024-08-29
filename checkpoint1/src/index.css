@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 50px;
+  font-size: 28px;
+}
+
+.item {
+  color: #333333;
+
+}
+
+.item:hover {
+  border-bottom: 1px solid #333333;
+}
+
+
+.header {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1376px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+.hero{
+  display: flex;
+  gap: 59px;
+  margin-bottom: 100px;
+}
+
+.texthero h1{
+  font-size: 60px;
+
+}
+
+.texthero p{
+  font-size: 24px;
+  margin: 32px 0;
+  max-width: 497px;
+}
+
+.texthero button {
+  padding: 22px 56px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #333333;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.imagehero{
+  width: 650px;
+}
+
+.cardlist{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 48px;
+
+}
+
+.card-container{
+  padding: 16px 32px;
+  height: 326px;
+  border-radius: 16px;
+  position: relative;
+
+}
+
+.card-icon{
+  position: absolute;
+  top: 24px ;
+  right: 23px;
+}
+
+.card-number{
+  font-size: 64px;
+  color: #fff;
+
+}
+
+.card-title{
+  font-size: 32px;
+  color: #333333;
+  margin: 16px 0 8px;
+  font-weight: bold;
+
+}
+
+.card-description{
+  font-size: 18px;
+  color: #333333;
+}
