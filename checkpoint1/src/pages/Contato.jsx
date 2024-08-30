@@ -1,24 +1,31 @@
 import React from 'react';
+import Header from '../components/Header';
+import Form from '../components/Form';
+import instagramv2 from '../assets/images/instagramv2.png'
+import twitter from '../assets/images/twitter.png'
+import discord from '../assets/images/discord.png'
+
 
 const Contato = () => {
   return (
     <div>
-      <h1>Dúvidas e suporte, entre em contato:</h1>
-      <div className="contact-form">
-        <form>
-          <label>Nome:</label>
-          <input type="text" />
-          <label>E-mail:</label>
-          <input type="email" />
-          <label>Mensagem:</label>
-          <textarea></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+      <Header/>
+      <div className='contact-container'>
+        <div className='left-section'>
+          <h1>Dúvidas e suporte, entre em contato:</h1>
+          <div className='iconsv2'>
+            <img className='iconsv3' src={twitter} alt="twitter" />
+            <img className='iconsv3' src={instagramv2} alt="instagram" />
+            <img className='iconsv3' src={discord} alt="discord" />
+          </div>
+        </div>
+        <Form/>
       </div>
-      <div className="social-icons">
-        {/* Ícones das redes sociais */}
-      </div>
+      
     </div>
+
+    
+
   );
 };
 
