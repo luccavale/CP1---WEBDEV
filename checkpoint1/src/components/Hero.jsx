@@ -1,15 +1,14 @@
 import React from 'react';
-import images from '../assets/images/heroimage.png'
 
-const Hero = () => {
+const Hero = ({title, text, button, image}) => {
   return (
     <section className='hero'>
         <div className='texthero'>
-            <h1>Crie seus vídeos online</h1>
-            <p>Transforme suas ideias em filmes memoráveis: onde a criatividade encontra a simplicidade.</p>
-            <button>Começar agora!</button>
+            <h1>{title}</h1>
+            <p>{text}</p>
+            <button>{button}</button>
         </div>
-        <img className = 'imagehero' src={images} alt="pulo" />
+        <img className = 'imagehero' src={image} alt="pulo" />
     </section>
 
   );
